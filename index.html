@@ -11,6 +11,10 @@
         background-color: #bfdbfe;
       }
 
+      .green-background {
+        background-color: #047857;
+      }
+
       html {
         scrollbar-gutter: stable;
       }
@@ -44,7 +48,7 @@
         min-height: 100vh;
         font-size: 3rem;
         row-gap: 2rem;
-        padding: 4rem 0;
+        padding: 5rem 0;
       }
 
       nav a {
@@ -62,6 +66,10 @@
       button {
         position: relative;
         z-index: 1;
+        display: block;
+        margin: 0 auto;
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
       }
     </style>
 
@@ -73,6 +81,7 @@
       function toggleNav() {
         nav.classList.toggle("hide-nav")
         body.classList.toggle("disable-scroll")
+        body.classList.toggle("green-background")
       }
 
       button.addEventListener("click", toggleNav)
@@ -82,6 +91,7 @@
     <main>
       <button>Toggle Nav</button>
       <h1>Title</h1>
+      <a href="https://github.com/mornir/scrollbar-gutter">GitHub Repository</a>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut
         delectus consectetur soluta vitae quos natus commodi laudantium quas
