@@ -79,9 +79,9 @@
       const body = document.querySelector("body")
 
       function toggleNav() {
+        body.classList.toggle("green-background")
         nav.classList.toggle("hide-nav")
         body.classList.toggle("disable-scroll")
-        body.classList.toggle("green-background")
       }
 
       button.addEventListener("click", toggleNav)
